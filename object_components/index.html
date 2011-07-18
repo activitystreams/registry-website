@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Object Components - Activity Streams Registry</title>
+<base href="/">
+<link rel="stylesheet" type="text/css" href="/media/style.css">
+</head>
+<body>
+<header>
+<h1><a href="/">Activity Streams Registry</a></h1>
+</header>
+
+<section id="body">
+<h2>Object Components</h2>
+
+
+
+<p>The following object components are currently registered:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>JSON Property</th>
+<th>Specification</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="odd">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">Attachments</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">attachments</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">A collection of one or more additional, associated objects, similar to the concept of attached files in an email message.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Attending</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">attending</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the collection of actors that have responded to an event using the rsvp-yes verb.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">Author</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">author</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">An Object that describes the entity that created or authored the object.  Note that the author field identifies the entity that created the object and does not necessarily identify the entity that published the object.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">Content</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">content</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">Natural-language description of the object encoded as a single JSON String containing HTML markup.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">Display Name</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">displayName</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">A natural-language, human-readable and plain-text name for the object. HTML markup MUST NOT be included.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">Downstream Duplicates</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">downstreamDuplicates</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">A JSON Array of one or more absolute IRIs identifying objects that duplicate this object's content.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Followers</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">followers</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the collection of objects (typically person objects) that are &quot;following&quot; the containing object.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Following</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">following</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the collection of objects that this object is &quot;following&quot;.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Friend Requests</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">friend-requests</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the collection of objects with which a &quot;friendship&quot; relationship is being requested using the request-friend verb. This property will typically only be relevant for the person object type.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Friends</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">friends</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the collection of objects with which a &quot;friendship&quot; relationship has been established using the make-friend verb. This property will typically only be relevant for the person object type.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">ID</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">id</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">An absolute URI that uniquely identifies the object.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">Image</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">image</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">A Media Link that describes a resource providing a visual representation of the object, intended for human consumption.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Likes</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">likes</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the actors (typically person objects) that have favorited or liked the containing object.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname draft"><a href="http://activitystrea.ms/head/activity-schema.html#anchor6">Location</a></td>
+<td class="componentjson"></td>
+<td class="componentspec"><a href="specs/activity-schema/">Activity Schema</a></td>
+<td class="componentdesc">An object construct representing the location at which the activity occured.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Maybe Attending</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">maybeAttending</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the collection of actors that have responded to an event using the rsvp-maybe verb.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Members</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">members</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the actors (typically person objects) that have &quot;joined&quot; the containing object. This is typically only useful for object types that represent groups.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname draft"><a href="http://activitystrea.ms/head/activity-schema.html#mood-property">Mood</a></td>
+<td class="componentjson"></td>
+<td class="componentspec"><a href="specs/activity-schema/">Activity Schema</a></td>
+<td class="componentdesc">A human-readable keyword or short phrase describing the mood of the actor at the time the activity was performed.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Not Attending</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">notAttending</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the collection of actors that have responded to an event using the rsvp-no verb.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">Object Type</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">objectType</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">Identifies the type of object.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#activity">Published</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#activity">published</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">The date and time at which the object was published.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname draft"><a href="http://activitystrea.ms/head/activity-schema.html#rating-property">Rating</a></td>
+<td class="componentjson"></td>
+<td class="componentspec"><a href="specs/activity-schema/">Activity Schema</a></td>
+<td class="componentdesc">A rating given as a number between 1.0 and 5.0 inclusive with one decimal place of precision.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Replies</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">replies</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the thread of discussion associated with a given object. Typically, the objects contained will have an implied inReplyTo property value equal to the object containing the replies property.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Reviews</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">reviews</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about reviews available for the containing object.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Saves</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">saves</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the actors (typically person objects) that have &quot;saved&quot; the containing object.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname draft"><a href="http://activitystrea.ms/specs/json/1.0/#stream">Shares</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#stream">shares</a></tt></td>
+<td class="componentspec"><a href="specs/activity-streams-replies/">Responses for Activity Streams</a></td>
+<td class="componentdesc">Used to provide information about the actors (typically person objects) that have &quot;shared&quot; the containing object.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname draft"><a href="http://activitystrea.ms/head/activity-schema.html#source">Source</a></td>
+<td class="componentjson"></td>
+<td class="componentspec"><a href="specs/activity-schema/">Activity Schema</a></td>
+<td class="componentdesc">A reference to the original source of an object or activity.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">Summary</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">summary</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">Natural-language summarization of the object encoded as a single JSON String containing HTML markup.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname draft"><a href="http://activitystrea.ms/head/activity-schema.html#tags-property">Tags</a></td>
+<td class="componentjson"></td>
+<td class="componentspec"><a href="specs/activity-schema/">Activity Schema</a></td>
+<td class="componentdesc">A listing of the objects that have been associated with a particular object using the tag verb.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">URL</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">url</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">An IRI identifying a resource providing an HTML representation of the object.</td>
+</tr>
+
+<tr class="even">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">Updated</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">updated</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">The date and time at which the object was modified.</td>
+</tr>
+
+<tr class="odd">
+<td class="componentname"><a href="http://activitystrea.ms/specs/json/1.0/#object">Upstream Duplicates</a></td>
+<td class="componentjson"><tt><a href="http://activitystrea.ms/specs/json/1.0/#object">upstreamDuplicates</a></tt></td>
+<td class="componentspec"><a href="specs/json-activity/">JSON Activity Streams 1.0</a></td>
+<td class="componentdesc">A JSON Array of one or more absolute IRIs identifying objects that duplicate this object's content.</td>
+</tr>
+
+</tbody>
+</table>
+
+
+</section>
+
+</body>
+</html>
+
